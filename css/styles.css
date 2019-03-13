@@ -123,7 +123,7 @@ textarea {
 button {
   outline: none;
   background-color: #00b38f;
-  width: 100%;
+  width: 101%;
   height: 50px;
   margin: 10px 0;
   padding: 10px 0;
@@ -140,7 +140,8 @@ button:active {
 }
 
 fieldset[class="max_size"] {
-  visibility: hidden;
+  display: none;
+  /* visibility: hidden; */
 }
 
 @media (min-width: 768px) {
@@ -154,16 +155,35 @@ fieldset[class="max_size"] {
     display: none;
   }
   fieldset[class="max_size"] {
-    visibility: visible;
-    display: inline-block;
-    width: 90%;
+    display: block;
+    /* visibility: visible; */
+    width: 94%;
   }
   input[type="text"], select {
-    /* margin */
-    width: 50%;
+    padding: 0px 20px;
+    width: 41.25%;
+  }
+  select {
+    width: 49.75%;
   }
   .max_size label {
-    /* float: left; */
+    margin-top: 22px;
+    float: left;
     width: 50%;
+  }
+  input[type="text"]:focus {
+    width: 40.561%;
+  }
+  button {
+    width: 98.7%;
+  }
+  input[id="zip"] {
+    width: 18%;
+  }
+  input[id="zip"]:focus {
+    width: 18%;
+  }
+  textarea:focus {
+    width: 89%;
   }
 }
