@@ -53,8 +53,8 @@ hr[class="thick_hr"] {
 }
 
 hr[class="bottom_hr"] {
-  width: 96%;
-  margin-right: 12px;
+  width: 93%;
+  margin-left: 14px;
 }
 
 fieldset {
@@ -116,6 +116,10 @@ input[type="text"]:focus, select:focus, textarea:focus {
   border: 2px solid #132639;
 }
 
+input[type="text"] {
+
+}
+
 textarea {
   height: 100px;
 }
@@ -124,6 +128,7 @@ button {
   outline: none;
   background-color: #00b38f;
   width: 101%;
+  max-width: 674px;
   height: 50px;
   margin: 10px 0;
   padding: 10px 0;
@@ -145,11 +150,14 @@ fieldset[class="max_size"] {
 }
 
 @media (min-width: 768px) {
+  main {
+    margin: auto;
+  }
   form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 700px;
   }
   fieldset[class="default"] {
     display: none;
@@ -159,11 +167,13 @@ fieldset[class="max_size"] {
     /* visibility: visible; */
     width: 94%;
   }
-  input[type="text"], select {
+  input[type="text"] {
     padding: 0px 20px;
-    width: 41.25%;
+    width: 43.40%;
   }
   select {
+    padding: 0px 20px;
+    max-width: 324px;
     width: 49.75%;
   }
   .max_size label {
@@ -185,5 +195,15 @@ fieldset[class="max_size"] {
   }
   textarea:focus {
     width: 89%;
+  }
+  button[type="submit"] {
+    max-width: 655px;
+  }
+  hr[class="bottom_hr"] {
+    width: 92.85%;
+    /* max-width: 645px; */
+  }
+  textarea {
+    width: 615px;
   }
 }
